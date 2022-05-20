@@ -24,8 +24,10 @@ namespace FinancialApp.API.Controllers
             return Ok(_accountService.Get().Select(x => new AccountDTO
             {
                 Id = x.Id,
-                Name = x.Name
-
+                Name = x.Name,
+                Currency = x.Currency,
+                Amount = x.Amount,
+                ConversionRate = x.ConversionRate,
             }).ToList()
             );
         }

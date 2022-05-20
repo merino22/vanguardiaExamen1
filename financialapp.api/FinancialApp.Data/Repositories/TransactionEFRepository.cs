@@ -18,31 +18,31 @@ namespace FinancialApp.Data.Repositories
         }
         public Transaction Add(Transaction entity)
         {
-            var entry = _context.Transaction.Add(entity);
+            var entry = _context.Transactions.Add(entity);
             _context.SaveChanges();
             return entry.Entity;
         }
 
         public Transaction Delete(Transaction entity)
         {
-            var entry = _context.Transaction.Remove(entity);
+            var entry = _context.Transactions.Remove(entity);
             _context.SaveChanges();
             return entry.Entity;
         }
 
         public IEnumerable<Transaction> Get()
         {
-            return _context.Transaction;
+            return _context.Transactions;
         }
 
         public Transaction Get(int id)
         {
-            return _context.Transaction.SingleOrDefault(x => x.Id == id);
+            return _context.Transactions.SingleOrDefault(x => x.Id == id);
         }
 
         public Transaction Update(Transaction entity)
         {
-            var entry = _context.Transaction.Update(entity);
+            var entry = _context.Transactions.Update(entity);
             _context.SaveChanges();
             return entry.Entity;
         }

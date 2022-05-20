@@ -7,14 +7,14 @@ namespace FinancialApp.Data
 {
     public class FinancialAppContext : DbContext
     {
-        public FinancialAppContext(DbContextOptions options)
+        public FinancialAppContext(DbContextOptions<FinancialAppContext> options)
             : base(options)
         {
             
         }
-        public DbSet<Account> Account { get; set; }
+        public DbSet<Account> Accounts { get; set; }
 
-        public DbSet<Transaction> Transaction { get; set; }
+        public DbSet<Transaction> Transactions { get; set; }
 
         public DbSet<AccountList> AccountLists { get; set; }
 

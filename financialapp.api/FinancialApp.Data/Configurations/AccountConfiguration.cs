@@ -15,7 +15,7 @@ namespace FinancialApp.Data.Configurations
             {
                 new Account
                 {
-                    Id = -1,
+                    Id = 1,
                     Amount = 475,
                     Currency = "USD",
                     Name = "Cuenta en dolares 1",
@@ -23,7 +23,7 @@ namespace FinancialApp.Data.Configurations
                 },
                 new Account
                 {
-                    Id = -2,
+                    Id = 2,
                     Amount = 1500,
                     Currency = "EUR",
                     Name = "Cuenta en euros única",
@@ -31,7 +31,7 @@ namespace FinancialApp.Data.Configurations
                 },
                 new Account
                 {
-                    Id = -3,
+                    Id = 3,
                     Amount = 0,
                     Currency = "USD",
                     Name = "Cuenta en dolares 2",
